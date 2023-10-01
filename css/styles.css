@@ -129,10 +129,25 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url(/images/people-office1.jpg), lightgray;
+    /* background: url(/images/people-office1.jpg), lightgray 0px -167.766px / 100% 139.922% no-repeat; */
     background-color: var(--NAVY-BLUE);
+    /* background-image: url(/images/people-office1.jpg); */
+    /* opacity: .8; */
+    filter: grayscale(1oo%);
+    background-repeat: no-repeat;
+    background-size: 1440px;
+    background-position: center;
     color: var(--WHITE);
     
 }
+
+/* .hero img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */
 
 .hero h1 {
     width: 496px;
