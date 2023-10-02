@@ -60,7 +60,7 @@ h3 {
 
 /*header-box - means to group logo and navigation, needed if want the group to be on top left*/    
 .header-box{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,22 +122,22 @@ h3 {
 
 /*Hero section*/
 .hero {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    width: 1440px;
     height: 600px;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(/images/people-office1.jpg), lightgray;
-    /* background: url(/images/people-office1.jpg), lightgray 0px -167.766px / 100% 139.922% no-repeat; */
+    /* background: url(/images/people-office1.jpg), lightgray 0px 0px / 100% 100% no-repeat; */ */
     background-color: var(--NAVY-BLUE);
-    /* background-image: url(/images/people-office1.jpg); */
+    background-image: url(/images/people-office1.jpg);
     /* opacity: .8; */
-    filter: grayscale(1oo%);
-    background-repeat: no-repeat;
-    background-size: 1440px;
-    background-position: center;
+    /* filter: grayscale(1oo%); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 1440px; */
+    /* background-position: center; */
     color: var(--WHITE);
     
 }
@@ -147,6 +147,12 @@ h3 {
     height: 100%;
     width: 100%;
     object-fit: cover;
+} */
+
+/* .hero-label{
+    position:relative;
+    top: 188px;
+    left: 472px;
 } */
 
 .hero h1 {
