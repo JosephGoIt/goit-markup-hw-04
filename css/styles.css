@@ -19,7 +19,7 @@ body {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 2%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     width: 1440px;
     /* height: 2592px; */
     background-color: var(--WHITE);
@@ -47,7 +47,7 @@ h3 {
 
 /*Header or top section*/
 .header {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /* width: 1440px; */
     height: 72px;
     flex-shrink: 0;
@@ -123,8 +123,6 @@ h3 {
 /*Hero section*/
 .hero {
     /* box-sizing: border-box; */
-    width: 1440px;
-    height: 600px;
     /* flex-shrink: 0; */
     display: flex;
     flex-direction: column;
@@ -132,11 +130,18 @@ h3 {
     align-items: center;
     /* background: url(/images/people-office1.jpg), lightgray 0px 0px / 100% 100% no-repeat; */ */
     background-color: var(--NAVY-BLUE);
-    background-image: url(/images/people-office1.jpg);
-    /* opacity: .8; */
+    background-image: linear-gradient(to bottom,
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)),
+    url(/images/people-office1.jpg);
+    /* 
+    opacity: .8; */
     /* filter: grayscale(1oo%); */
     /* background-repeat: no-repeat; */
-    /* background-size: 1440px; */
+    background-size: cover;
+    width: 1440px;
+    height: 600px;
+    resize: both;
     /* background-position: center; */
     color: var(--WHITE);
     
@@ -180,7 +185,7 @@ h3 {
 .button:focus {
     background-color: var(--OCEAN);
     border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
     cursor: pointer;
 }
 
@@ -205,6 +210,15 @@ h3 {
 .service-features p {
     color: var(--SLATE);
 }
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
 
 /*Platform section or section 2*/
 .platform {
