@@ -220,18 +220,42 @@ h3 {
 }
 
 .icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
+    /* display: inline-block; */
+    width: 40px;
+    height: 40px;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
+    /* display:block; */
   }
 
-  .service-icon .icon {
-    height: 64px;
+  .icon-antenna1 {
     width: 64px;
-    margin: 24px 100px;
+    height: 64px;
+  }
+
+  .icon-clock1 {
+    width: 64px;
+    height: 64px;   
+  }
+
+  .icon-diagram1 {
+    width: 64px;
+    height: 64px;
+  }
+
+  .icon-astronaut1 {
+    width: 64px;
+    height: 64px;
+  }
+
+  .service-icon {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    padding: 24px 100px;
+    background-color: var(--CLOUD);
   }
 
 /*Platform section or section 2*/
