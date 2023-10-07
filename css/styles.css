@@ -172,51 +172,27 @@ p {
     gap: 24px;
 }
 
-/* .icon {
-    width: 40px;
-    height: 40px;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-    display: block;
-  } */
-
-  .icon {
+.icon {
     display: inline-block;
     width: 40px;
     height: 40px;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
-    background-color: red;
-  }
+    /* background-color: var(--CLOUD); */
+}
 
-  .icon-antenna1 {
+.service-icon .icon{
     width: 64px;
     height: 64px;
-  }
+}
 
-  .icon-clock1 {
-    width: 64px;
-    height: 64px;   
-  }
-
-  .icon-diagram1 {
-    width: 64px;
-    height: 64px;
-  }
-
-  .icon-astronaut1 {
-    width: 64px;
-    height: 64px;
-  }
-
-  .service-li div {
+.service-li div {
     display: flex;
     background-color: var(--CLOUD);
     justify-content: center;
     padding: 24px 100px;
-  }
+}
 
   .service-li{
     display: flex;
@@ -247,13 +223,13 @@ p {
 
 /*Team section or Section 3*/
 .team {
-    /* height: 780px; */
+    height: 780px;
     background-color: var(--CLOUD);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 120px;
+    border-bottom: 120px;
 }
 
 .team-members {
@@ -282,28 +258,31 @@ p {
     gap: 10px;
 }
 
-.customer {
+.clients {
     /* height: 200px; */
-    margin: 0px 156px 120px;
+    margin: 120px 156px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
-
-.customer-logo .icon {
-    width: 168px;
-    height: 88px;
-}
-
-.customer-logo {
+.clients-logo {
     display: flex;
     gap: 24px;
 }
 
-.customer-logo .icon{
-    outline: 2px solid var(--LIGHT-SLATE);
+.client-icon {
+    display: flex;
+    border: 2px solid var(--LIGHT-SLATE);
+    border-radius: 4px;
 }
+
+.client-icon .icon {
+    width: 168px;
+    height: 88px;
+}
+
 .footer {
     display: flex;
     background-color: var(--NAVY-BLUE);
@@ -442,9 +421,4 @@ p {
 
 .footer-socialmedia div {
     justify-content: space-between;
-}
-
-.icon-EllipseTW {
-    background-color: none;
-    fill: red;
 }
