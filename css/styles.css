@@ -188,6 +188,7 @@ p {
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
+    background-color: red;
   }
 
   .icon-antenna1 {
@@ -443,6 +444,7 @@ p {
     justify-content: space-between;
 }
 
-.footer-socialmedia .social-media .icon{
-    background-color: #31D0AA;
+.icon-EllipseTW {
+    background-color: none;
+    fill: red;
 }
