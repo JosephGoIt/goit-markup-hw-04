@@ -404,11 +404,18 @@ p {
 
 .social-media{
     display: flex;
-    height: 40px;
-    gap:24px;
-    justify-content: center;
-    align-items: center;
-    /* background-color: var(--NAVY-BLUE); */
+    justify-content: space-around;
+}
+
+.icon-container {
+    background-color: var(--IRIS);
+    padding: 10px 14px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+svg {
+    background: yellow;
 }
 
 .footer-socialmedia {
