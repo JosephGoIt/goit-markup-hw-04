@@ -279,17 +279,21 @@ p {
 
 .client-icon:hover,
 .client-icon:focus {
-    border-color: var(--OCEAN);
+border-color: var(--OCEAN);
 }
 
 .client-icon .icon {
+    fill: var(--LIGHT-SLATE);
     width: 168px;
     height: 88px;
-    fill:#31D0AA;
 }
 
 .client-icon .icon:hover,
 .client-icon .icon:focus {
+    fill: var(--OCEAN);
+}
+
+.client-icon svg{
     fill: var(--OCEAN);
 }
 
@@ -414,7 +418,7 @@ p {
 
 .social-media{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .icon-container {
@@ -447,5 +451,6 @@ p {
 }
 
 .footer-socialmedia div {
-    justify-content: space-between;
+    justify-content: start;
+    gap: 10px;
 }
