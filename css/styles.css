@@ -27,10 +27,22 @@ body {
     padding-left: 0;
 }
 
+h1 {
+    width: 496px;
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 107.143%;
+    letter-spacing: 1.12px;
+    margin:0%
+}
+
 h2 {
     font-size: 36px;
     font-weight: 700;
     text-transform: capitalize;
+    
 }
 
 h3 {
@@ -133,23 +145,13 @@ p {
     gap: 50px;
 }
 
-.hero h1 {
-    width: 496px;
-    text-align: center;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 107.143%;
-    letter-spacing: 1.12px;
-    margin:0%
-}
-
 .button {
     padding: 16px 32px;
     gap: 10px;
     border-radius: 4px;
     background-color: var(--IRIS);
     color: var(--WHITE);
+    border: 0;
 }
 
 .button:hover,
@@ -174,15 +176,12 @@ p {
 
 .icon {
     display: inline-block;
-    width: 40px;
-    height: 40px;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
-    /* background-color: var(--CLOUD); */
 }
 
-.service-icon .icon{
+.serv-icon{
     width: 64px;
     height: 64px;
 }
@@ -278,9 +277,20 @@ p {
     border-radius: 4px;
 }
 
+.client-icon:hover,
+.client-icon:focus {
+    border-color: var(--OCEAN);
+}
+
 .client-icon .icon {
     width: 168px;
     height: 88px;
+    fill:#31D0AA;
+}
+
+.client-icon .icon:hover,
+.client-icon .icon:focus {
+    fill: var(--OCEAN);
 }
 
 .footer {
@@ -408,14 +418,24 @@ p {
 }
 
 .icon-container {
+    display: flex;
+    height: 40px;
+    width: 40px;
     background-color: var(--IRIS);
-    padding: 10px 14px;
     border-radius: 50%;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-svg {
-    background: yellow;
+.team-profile .icon-container:hover,
+.team-profile.icon-container:focus {
+    background-color: var(--GREEN);
+}
+
+.icon-container .icon{
+    fill: var(--WHITE);
+    height: 16px;
+    width: 16px;
 }
 
 .footer-socialmedia {
