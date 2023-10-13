@@ -20,6 +20,10 @@ body {
     line-height: 24px;
     letter-spacing: 2%;
     background-color: var(--WHITE);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
 }
 
 .list {
