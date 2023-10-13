@@ -132,10 +132,10 @@ p {
     justify-content: center;
     align-items: center;
     background-color: var(--NAVY-BLUE);
-    background-image: linear-gradient(to bottom,
+    background: linear-gradient(to bottom,
     rgba(46, 47, 66, 0.70),
     rgba(46, 47, 66, 0.70)),
-    url(/images/people-office1.jpg);
+    url(../images/people-office1.jpg);
     background-size: cover;
     /* height: 600px; */
     resize: both;
@@ -285,6 +285,7 @@ p {
 .client-icon:hover,
 .client-icon:focus {
 border-color: var(--OCEAN);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .client-icon .icon {
