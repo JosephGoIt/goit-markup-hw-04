@@ -158,6 +158,7 @@ p {
 .button:focus {
     background-color: var(--OCEAN);
     cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*Service section or section 1*/
@@ -229,6 +230,10 @@ p {
     justify-content: center;
     align-items: center;
     border-bottom: 120px;
+}
+
+.team-card:hover, .team-card:focus {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .team-members {
@@ -414,6 +419,10 @@ border-color: var(--OCEAN);
     width: auto 1128px;
     height: auto 420px;
     margin: 0 156px 120px;
+}
+
+.section-card:hover, .section-card:focus {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .social-media{
